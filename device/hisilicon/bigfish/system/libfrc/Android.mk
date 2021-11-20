@@ -1,0 +1,26 @@
+LOCAL_PATH := $(call my-dir)
+#
+# libhi_FrcCalculate
+#
+include $(CLEAR_VARS)
+include $(SDK_DIR)/Android.def
+
+LOCAL_SRC_FILES := frc.cpp
+LOCAL_C_INCLUDES := $(COMMON_UNF_INCLUDE)
+LOCAL_C_INCLUDES += $(COMMON_DRV_INCLUDE)
+LOCAL_C_INCLUDES += $(COMMON_API_INCLUDE)
+LOCAL_C_INCLUDES += $(MSP_UNF_INCLUDE)
+LOCAL_C_INCLUDES += $(MSP_DRV_INCLUDE)
+LOCAL_C_INCLUDES += $(MSP_API_INCLUDE)
+LOCAL_C_INCLUDES += $(SAMPLE_DIR)/common
+LOCAL_C_INCLUDES += $(COMPONENT_DIR)/ha_codec/include
+LOCAL_C_INCLUDES += $(SDK_DIR)/pub/include/
+LOCAL_CFLAGS := $(CFG_HI_CFLAGS) $(CFG_HI_BOARD_CONFIGS)
+
+LOCAL_SHARED_LIBRARIES := libcutils libdl libm libhi_common libutils libhi_msp libbinder libmedia
+
+LOCAL_MODULE := libhi_frc
+ALL_DEFAULT_INSTALLED_MODULES += $(LOCAL_MODULE)
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)

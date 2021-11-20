@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIGN_DOWN	HwcDebug.cpp	30;"	d	file:
+ALIGN_MASK_H	HwcDebug.cpp	32;"	d	file:
+ALIGN_MASK_W	HwcDebug.cpp	31;"	d	file:
+ALIGN_UP	HwcDebug.cpp	29;"	d	file:
+ARGB_1555	HwcDebug.h	/^    ARGB_1555 = 208   \/*        A   R  G  B *\/$/;"	e	enum:__anon2
+BGRA_8888	HwcDebug.h	/^    BGRA_8888 = 212,  \/*        B G R A *\/$/;"	e	enum:__anon2
+BGRX_8888	HwcDebug.h	/^    BGRX_8888 = 211,      \/*        B G R - *\/$/;"	e	enum:__anon2
+BGR_565	HwcDebug.h	/^    BGR_565   = 302,  \/*         B  G  R *\/$/;"	e	enum:__anon2
+BGR_888	HwcDebug.h	/^    BGR_888   = 210,  \/*        B G R *\/$/;"	e	enum:__anon2
+BI_BITFIELDS	HwcDebug.cpp	27;"	d	file:
+BI_RGB	HwcDebug.cpp	24;"	d	file:
+BI_RLE4	HwcDebug.cpp	26;"	d	file:
+BI_RLE8	HwcDebug.cpp	25;"	d	file:
+DIM_LAYER	tdeCompose.h	/^     DIM_LAYER,$/;"	e	enum:__anon1
+HAL_MODULE_INFO_SYM	hwc.cpp	/^hwc_module_t HAL_MODULE_INFO_SYM = {$/;"	v
+HWC_DEBUG_H	HwcDebug.h	2;"	d
+HWC_H_INCLUDED	tdeCompose.h	36;"	d
+INIT_ZERO	hwc.cpp	375;"	d	file:
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS:= -DLOG_TAG=\\"hwc\\"$/;"	m
+LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := $(HISI_PLATFORM_PATH)\/hardware\/gpu\/android\/gralloc$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := hwcomposer.bigfish$/;"	m
+LOCAL_MODULE_PATH	Android.mk	/^LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)\/hw$/;"	m
+LOCAL_MODULE_TAGS	Android.mk	/^LOCAL_MODULE_TAGS := optional$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := liblog libEGL libhardware liboverlay libhi_msp libcutils$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := hwc.cpp HwcDebug.cpp tdeCompose.cpp$/;"	m
+OVERLAY	hwc.cpp	42;"	d	file:
+OV_TAG	hwc.cpp	43;"	d	file:
+RGBA_8888	HwcDebug.h	/^    RGBA_8888 = 306,  \/*        R G B A *\/$/;"	e	enum:__anon2
+RGBX_8888	HwcDebug.h	/^    RGBX_8888 = 305,  \/*        R G B - *\/$/;"	e	enum:__anon2
+RGB_565	HwcDebug.h	/^    RGB_565   = 209,  \/*         R  G  B *\/$/;"	e	enum:__anon2
+RGB_888	HwcDebug.h	/^    RGB_888   = 303,  \/*        R G B *\/$/;"	e	enum:__anon2
+SKIP_LAYER	tdeCompose.h	/^     SKIP_LAYER$/;"	e	enum:__anon1
+SYNC_IOC_MAGIC	tdeCompose.cpp	20;"	d	file:
+SYNC_IOC_WAIT	tdeCompose.cpp	21;"	d	file:
+TEST_DIR	hwc.cpp	133;"	d	file:
+UI_LAYER	tdeCompose.h	/^     UI_LAYER,$/;"	e	enum:__anon1
+VIDEO_LAYER	tdeCompose.h	/^     VIDEO_LAYER,$/;"	e	enum:__anon1
+_WriteBitmap	HwcDebug.cpp	/^int _WriteBitmap( const char* filename,  const void* data,  unsigned int width, unsigned int height,  unsigned int stride, int format)$/;"	f
+_big_endian	HwcDebug.cpp	/^static int _big_endian = -1;$/;"	v	file:
+_bitmapFileHeader	HwcDebug.cpp	/^typedef struct _bitmapFileHeader$/;"	s	file:
+_bitmapInfoHeader	HwcDebug.cpp	/^typedef struct _bitmapInfoHeader$/;"	s	file:
+_check_endian	HwcDebug.cpp	/^static void _check_endian()$/;"	f	file:
+_fconv	HwcDebug.cpp	/^static int _fconv( void* dest, int    destformat,  const void* source,  int  srcformat, int  count)$/;"	f	file:
+_little16	HwcDebug.cpp	/^static unsigned short _little16(unsigned short data)$/;"	f	file:
+_little32	HwcDebug.cpp	/^static  uint32_t _little32( uint32_t data)$/;"	f	file:
+bVisible	hwc.cpp	/^static int bVisible(hwc_region_t* region)$/;"	f	file:
+bVisible	tdeCompose.cpp	/^static int bVisible(hwc_region_t* region)$/;"	f	file:
+bfOffBits	HwcDebug.cpp	/^    uint32_t   bfOffBits;$/;"	m	struct:_bitmapFileHeader	file:
+bfReserved1	HwcDebug.cpp	/^    uint16_t   bfReserved1;$/;"	m	struct:_bitmapFileHeader	file:
+bfReserved2	HwcDebug.cpp	/^    uint16_t   bfReserved2;$/;"	m	struct:_bitmapFileHeader	file:
+bfSize	HwcDebug.cpp	/^    uint32_t   bfSize;$/;"	m	struct:_bitmapFileHeader	file:
+bfType	HwcDebug.cpp	/^    uint16_t   bfType;$/;"	m	struct:_bitmapFileHeader	file:
+biBitCount	HwcDebug.cpp	/^    uint16_t   biBitCount;$/;"	m	struct:_bitmapInfoHeader	file:
+biClrImportant	HwcDebug.cpp	/^    uint32_t   biClrImportant;$/;"	m	struct:_bitmapInfoHeader	file:
+biClrUsed	HwcDebug.cpp	/^    uint32_t   biClrUsed;$/;"	m	struct:_bitmapInfoHeader	file:
+biCompression	HwcDebug.cpp	/^    uint32_t   biCompression;$/;"	m	struct:_bitmapInfoHeader	file:
+biHeight	HwcDebug.cpp	/^    uint32_t   biHeight;$/;"	m	struct:_bitmapInfoHeader	file:
+biPlanes	HwcDebug.cpp	/^    uint16_t   biPlanes;$/;"	m	struct:_bitmapInfoHeader	file:
+biSize	HwcDebug.cpp	/^    uint32_t   biSize;$/;"	m	struct:_bitmapInfoHeader	file:
+biSizeImage	HwcDebug.cpp	/^    uint32_t   biSizeImage;$/;"	m	struct:_bitmapInfoHeader	file:
+biWidth	HwcDebug.cpp	/^    uint32_t   biWidth;$/;"	m	struct:_bitmapInfoHeader	file:
+biXPelsPerMeter	HwcDebug.cpp	/^    uint32_t   biXPelsPerMeter;$/;"	m	struct:_bitmapInfoHeader	file:
+biYPelsPerMeter	HwcDebug.cpp	/^    uint32_t   biYPelsPerMeter;$/;"	m	struct:_bitmapInfoHeader	file:
+bitmapFileHeader	HwcDebug.cpp	/^__attribute__((packed)) bitmapFileHeader;$/;"	t	typeref:struct:_bitmapFileHeader	file:
+bitmapInfoHeader	HwcDebug.cpp	/^__attribute__((packed)) bitmapInfoHeader;$/;"	t	typeref:struct:_bitmapInfoHeader	file:
+device	hwc.cpp	/^    hwc_composer_device_1_t device;$/;"	m	struct:hwc_context_t	file:
+dump_layer	hwc.cpp	/^static void dump_layer(hwc_layer_1_t const* l, int i) {$/;"	f	file:
+fb2TdeFmt	tdeCompose.cpp	/^TDE2_COLOR_FMT_E fb2TdeFmt(int format)$/;"	f
+fbFormat	tdeCompose.cpp	/^static HIFB_COLOR_FMT_E  fbFormat = HIFB_FMT_ARGB8888;$/;"	v	file:
+fb_device	hwc.cpp	/^	framebuffer_device_t*  fb_device;$/;"	m	struct:hwc_context_t	file:
+format2dumpformat	HwcDebug.cpp	/^int format2dumpformat(int format)$/;"	f
+getBpp	hwc.cpp	/^int getBpp(int format)$/;"	f
+getFbFormat	tdeCompose.cpp	/^HIFB_COLOR_FMT_E  getFbFormat( )$/;"	f
+getLayerType	tdeCompose.cpp	/^int getLayerType(hwc_layer_1_t*  layer)$/;"	f
+getTdeFormat	tdeCompose.cpp	/^TDE2_COLOR_FMT_E getTdeFormat(int format)$/;"	f
+haveScale	tdeCompose.cpp	/^bool haveScale(hwc_layer_1_t*  layer)$/;"	f
+hwc_blank	hwc.cpp	/^static int hwc_blank(struct hwc_composer_device_1* dev, int disp, int blank)$/;"	f	file:
+hwc_context_t	hwc.cpp	/^struct hwc_context_t {$/;"	s	file:
+hwc_device_close	hwc.cpp	/^static int hwc_device_close(struct hw_device_t *dev)$/;"	f	file:
+hwc_device_open	hwc.cpp	/^static int hwc_device_open(const struct hw_module_t* module, const char* name,$/;"	f	file:
+hwc_event_control	hwc.cpp	/^static int hwc_event_control(struct hwc_composer_device_1* dev, int disp, int event, int enabled)$/;"	f	file:
+hwc_get_display_attributes	hwc.cpp	/^static int hwc_get_display_attributes(struct hwc_composer_device_1* dev, int disp,$/;"	f	file:
+hwc_get_display_configs	hwc.cpp	/^static int hwc_get_display_configs(struct hwc_composer_device_1* dev, int disp,$/;"	f	file:
+hwc_module_methods	hwc.cpp	/^static struct hw_module_methods_t hwc_module_methods = {$/;"	v	typeref:struct:hw_module_methods_t	file:
+hwc_prepare	hwc.cpp	/^static int hwc_prepare(hwc_composer_device_1_t *dev,$/;"	f	file:
+hwc_set	hwc.cpp	/^static int hwc_set(hwc_composer_device_1_t *dev,$/;"	f	file:
+is32Bit	tdeCompose.cpp	/^bool is32Bit(hwc_layer_1_t*  layer)$/;"	f
+isCopyBlendMode	tdeCompose.cpp	/^bool isCopyBlendMode(hwc_layer_1_t* srcLayer, int index)$/;"	f
+isFullScreen	tdeCompose.cpp	/^bool isFullScreen(hwc_layer_1_t*  backLayer, hwc_layer_1_t*  fbLayer)$/;"	f
+loadFbHalModule	hwc.cpp	/^static int loadFbHalModule(hwc_context_t* dev)$/;"	f	file:
+loadOverLayModule	hwc.cpp	/^int loadOverLayModule()$/;"	f
+mOdev	hwc.cpp	/^static struct overlay_device_t *mOdev = NULL;$/;"	v	typeref:struct:overlay_device_t	file:
+mTdeCompose	hwc.cpp	/^static bool mTdeCompose = false;$/;"	v	file:
+setFbFormat	tdeCompose.cpp	/^void setFbFormat(HIFB_COLOR_FMT_E  format)$/;"	f
+supportByHardware	tdeCompose.cpp	/^bool supportByHardware(hwc_display_contents_1_t* list) {$/;"	f
+sync_wait	tdeCompose.cpp	/^int sync_wait(int fd, int timeout)$/;"	f
+tde2FbFmt	tdeCompose.cpp	/^HIFB_COLOR_FMT_E tde2FbFmt(int format)$/;"	f
+tde_blit	tdeCompose.cpp	/^bool tde_blit(hwc_layer_1_t*  srcLayer, hwc_layer_1_t*  dstLayer)$/;"	f
+tde_compose	tdeCompose.cpp	/^int tde_compose(hwc_composer_device_1_t *dev,$/;"	f
+tde_fill_rect	tdeCompose.cpp	/^bool tde_fill_rect(HI_U32 color ,hwc_layer_1_t*  layer ,hwc_rect_t * pRect)$/;"	f
+tde_quick_copy	tdeCompose.cpp	/^bool tde_quick_copy(hwc_layer_1_t*  backLayer, hwc_layer_1_t*  fbLayer)$/;"	f

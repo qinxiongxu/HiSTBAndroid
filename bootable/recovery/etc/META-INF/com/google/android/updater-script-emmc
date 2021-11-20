@@ -1,0 +1,80 @@
+ui_print("start......");
+open_led();
+set_progress("1");
+show_progress("1","90");
+ui_print("update fastboot......");
+ifelse(getprop("persist.sys.packagetype.qfp") == "true", package_extract_file("fastboot-qfp.img", "/dev/block/platform/hi_mci.1/by-name/fastboot"),
+        package_extract_file("fastboot.img", "/dev/block/platform/hi_mci.1/by-name/fastboot"));
+ui_print("update bootargs......");
+package_extract_file("bootargs.img", "/dev/block/platform/hi_mci.1/by-name/bootargs");
+ui_print("update recovery......");
+package_extract_file("recovery.img", "/dev/block/platform/hi_mci.1/by-name/recovery");
+ui_print("update baseparam......");
+package_extract_file("baseparam.img", "/dev/block/platform/hi_mci.1/by-name/baseparam");
+ui_print("update logo......");
+package_extract_file("logo.img", "/dev/block/platform/hi_mci.1/by-name/logo");
+ui_print("update fastplay......");
+format("raw", "EMMC", "/dev/block/platform/hi_mci.1/by-name/fastplay", "0", "fastplay");
+package_extract_file("fastplay.img", "/dev/block/platform/hi_mci.1/by-name/fastplay");
+ui_print("update boot.....");
+package_extract_file("boot.img", "/dev/block/platform/hi_mci.1/by-name/kernel");
+ui_print("update pq_param.....");
+package_extract_file("pq_param.img", "/dev/block/platform/hi_mci.1/by-name/pqparam");
+ui_print("update userapi.....");
+package_extract_file("userapi.img", "/dev/block/platform/hi_mci.1/by-name/userapi");
+ui_print("update hibdrv.....");
+package_extract_file("hibdrv.img", "/dev/block/platform/hi_mci.1/by-name/hibdrv");
+ui_print("update system......");
+format("raw", "EMMC", "/dev/block/platform/hi_mci.1/by-name/qbflag", "0", "qbflag");
+format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/system", "0", "/system");
+mount("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/system", "/system");
+package_extract_dir("system", "/system");
+symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
+symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
+symlink("libGLESv2.so", "/system/lib/libGLESv3.so");
+symlink("mksh", "/system/bin/sh");
+symlink("toolbox", "/system/bin/cat", "/system/bin/chmod",
+        "/system/bin/clear", "/system/bin/getenforce", "/system/bin/getsebool",
+        "/system/bin/load_policy", "/system/bin/mkswap", "/system/bin/restorecon",
+        "/system/bin/runcon", "/system/bin/setenforce", "/system/bin/setsebool",
+        "/system/bin/swapoff", "/system/bin/swapon", "/system/bin/chcon",
+        "/system/bin/chown", "/system/bin/cmp", "/system/bin/cp",
+        "/system/bin/date", "/system/bin/dd", "/system/bin/df",
+        "/system/bin/dmesg", "/system/bin/du", "/system/bin/getevent",
+        "/system/bin/getprop", "/system/bin/grep", "/system/bin/hd",
+        "/system/bin/id", "/system/bin/ifconfig", "/system/bin/iftop",
+        "/system/bin/insmod", "/system/bin/ioctl", "/system/bin/ionice",
+        "/system/bin/kill", "/system/bin/ln", "/system/bin/log",
+        "/system/bin/ls", "/system/bin/lsmod", "/system/bin/lsof",
+        "/system/bin/md5", "/system/bin/mkdir", "/system/bin/mount",
+        "/system/bin/mv", "/system/bin/nandread", "/system/bin/netstat",
+        "/system/bin/newfs_msdos", "/system/bin/notify", "/system/bin/printenv",
+        "/system/bin/ps", "/system/bin/r", "/system/bin/readlink",
+        "/system/bin/renice", "/system/bin/rm", "/system/bin/rmdir",
+        "/system/bin/rmmod", "/system/bin/route", "/system/bin/schedtop",
+        "/system/bin/sendevent", "/system/bin/setconsole",
+        "/system/bin/setprop", "/system/bin/sleep", "/system/bin/smd",
+        "/system/bin/start", "/system/bin/stop", "/system/bin/sync",
+        "/system/bin/top", "/system/bin/touch", "/system/bin/umount",
+        "/system/bin/uptime", "/system/bin/vmstat", "/system/bin/watchprops",
+        "/system/bin/wipe");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/etc");
+unmount("/system");
+ui_print("update userdata......");
+format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/userdata", "0", "/data");
+mount("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/userdata", "/data");
+package_extract_dir("userdata", "/data");
+delete("/data/property/persist.sys.firstboot.flag");
+delete("/data/property/persist.sys.qb.flag");
+unmount("/data");
+ui_print("format cache......");
+unmount("/cache");
+format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/cache", "0", "/cache");
+ui_print("format private......");
+format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/private", "0", "/private");
+ui_print("format sdcard......");
+format("ext4", "EMMC", "/dev/block/platform/hi_mci.1/by-name/sdcard", "0", "/sdcard");
+close_led();
+ui_print("update ok ...");

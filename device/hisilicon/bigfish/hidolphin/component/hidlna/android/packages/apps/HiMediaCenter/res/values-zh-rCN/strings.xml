@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MediaCenterActivity!</string>
+    <string name="app_name">HiMediaCenter</string>
+    <string name="notSupportedFormat">不支持的文件格式</string>
+    <string name="projectType">项目类型</string>
+    <string name="radioNum">0/0</string>
+    <string name="sourcePath">路径</string>
+    <string name="displayPattern">显示模式</string>
+    <string name="mediaType">媒体类型</string>
+    <string name="sortType">排序类型</string>
+    <string name="search">搜索</string>
+    <string name="mediaInfo">媒体信息</string>
+    <string name="mediaName">文件名:　</string>
+    <string name="mediaSize">大　小:　</string>
+    <string name="mediaMime">类型</string>
+    <string name="imageResolution">分辨率:　</string>
+    <string name="more">更多功能</string>
+    <string name="musicAlbum">专　辑:　</string>
+    <string name="musicArtist">艺术家:　</string>
+    <string name="musicDate">年　份:　</string>
+    <string name="musicGenre">流　派:　</string>
+    <string name="unknown">未知</string>
+    <string name="network">网络</string>
+    <string name="upnp">家庭媒体共享</string>
+    <string name="nfs">NFS</string>
+    <string name="local">本地</string>
+    <string name="video">视　频:　</string>
+    <string name="audio">　音　频:　</string>
+    <string name="error_device_down">设备未响应</string>
+    <string name="NoDMS">没有发现DMS设备</string>
+    <string name="tryLater">请稍后再试</string>
+    <string name="quit">退出</string>
+    <string name="networkDisable">网络不可用</string>
+    <string name="connectNetwork">请连接网络或Wifi</string>
+    <string name="timeout">获取列表超时</string>
+    <string name="dms_down">此媒体服务器已经关闭</string>
+    <string name="subdir_is_null">子目录为空</string>
+    <string name="already_loading">载入中，请稍候再试</string>
+    <string name="network_interruption">网络中断</string>
+    <string name="surface_released">获取文件超时</string>
+    <string name="net_reconect">网络有变动，请重新获取媒体服务器</string>
+    <string name="network_speed_kbps">0Kbps</string>
+
+</resources>

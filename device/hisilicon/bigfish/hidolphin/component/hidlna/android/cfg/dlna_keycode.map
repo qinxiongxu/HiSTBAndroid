@@ -1,0 +1,40 @@
+# first key: translate value, user define
+# second key: vinput value, not android value, see more file: device/hisilicon/bigfish/prebuilts/xx.kl
+
+key 4105 127    # menu
+key 4101 158    # back
+key 4100 28     # enter
+key 4124 102    # home
+key 4096 105    # left
+key 4098 103    # up
+key 4097 106    # right
+key 4099 108    # down
+key 4109 104    # page up
+key 4110 109    # page down
+key 48   11     # 0
+key 49   2      # 1
+key 50   3      # 2
+key 51   4      # 3
+key 52   5      # 4
+key 53   6      # 5
+key 54   7      # 6
+key 55   8      # 7
+key 56   9      # 8
+key 57   10     # 9
+key 4128 116    # power
+key 4113 402    # channel up
+key 4114 403    # channel down
+key 4106 115    # volume up
+key 4107 114    # volume down
+key 4108 113    # volume mute
+key 4103 164    # play/pause
+key 4104 60     # prog red: maybe not support on SPC053
+key 4105 59     # prog green: maybe not support on SPC053
+key 4106 61     # prog yellow: maybe not support on SPC053
+key 4107 62     # prog blue: maybe not support on SPC053
+key 4127 141    # settings
+key 4118 171    # music
+key 4102 159    # media forward
+key 4104 168    # media rewind
+key 35   600    # "#"
+key 42   601    # "*"

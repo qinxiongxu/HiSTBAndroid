@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Applications>
+    <key-512m>
+        <apkName>MultiScreenServer.apk</apkName>
+        <apkName>HandsetForMultiScreen.apk</apkName>
+        <apkName>LiveWallpapersPicker.apk</apkName>
+        <apkName>Keyguard.apk</apkName>
+        <apkName>TeleService.apk</apkName>
+        <apkName>HiMediaShare.apk</apkName>
+    </key-512m>
+    <key-768m>
+        <apkName>MultiScreenServer.apk</apkName>
+        <apkName>HandsetForMultiScreen.apk</apkName>
+        <apkName>LiveWallpapersPicker.apk</apkName>
+        <apkName>Keyguard.apk</apkName>
+        <apkName>TeleService.apk</apkName>
+        <apkName>HiMediaShare.apk</apkName>
+    </key-768m>
+    <key-1g>
+        <apkName>LiveWallpapersPicker.apk</apkName>
+        <apkName>Keyguard.apk</apkName>
+        <apkName>TeleService.apk</apkName>
+        <apkName>Email.apk</apkName>
+    </key-1g>
+    <key-2g>
+    </key-2g>
+</Applications>

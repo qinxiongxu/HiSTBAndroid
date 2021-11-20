@@ -1,0 +1,27 @@
+LOCAL_PATH := $(call my-dir)
+ifeq ($(HISILICON_SECURITY_L2), true)
+
+include $(CLEAR_VARS)
+include $(SDK_DIR)/Android.def
+
+LOCAL_MODULE := libhi_ctit_otp_test
+ALL_DEFAULT_INSTALLED_MODULES += $(LOCAL_MODULE)
+
+LOCAL_CFLAGS += $(CFG_HI_CFLAGS) $(CFG_HI_BOARD_CONFIGS)
+LOCAL_MODULE_TAGS := optional
+
+LOCAL_C_INCLUDES := $(COMMON_UNF_INCLUDE)
+LOCAL_C_INCLUDES += $(COMMON_DRV_INCLUDE)
+LOCAL_C_INCLUDES += $(COMMON_API_INCLUDE)
+LOCAL_C_INCLUDES += $(MSP_UNF_INCLUDE)
+LOCAL_C_INCLUDES += $(MSP_DRV_INCLUDE)
+LOCAL_C_INCLUDES += $(MSP_API_INCLUDE)
+
+
+LOCAL_SRC_FILES  := ctit_otp_sample.cpp otp.cpp
+
+LOCAL_SHARED_LIBRARIES := libhi_msp libcutils libc libdl libhi_common libcutils libutils
+LOCAL_SHARED_LIBRARIES += libandroid_runtime
+include $(BUILD_SHARED_LIBRARY)
+
+endif

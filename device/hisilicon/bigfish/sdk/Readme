@@ -1,0 +1,102 @@
+---------------------  make help ----------------------
+input 'q' to exit .
+
+OVERVIEW:
+    When the first time you get the SDK, please use the 'make build' command 
+to build it.
+    After build the SDK. You can make the SDK use the 'make all' and 'make install'
+command to compile and install your modifies, or use the 'make clean' and 'make 
+install' command to clean and make the SDK.
+    If you modify some code of SDK, you can use the command list below to compile 
+them respectively. If unsure, use 'make rebuild' command to rebuild the whole SDK.
+
+    This document list the command you can use.     
+
+make:
+	The same as make help.
+
+make help:
+	Show this list.
+
+make tools:
+	Make tools, you need this command when you make the SDK first time. 
+	Recommend to use 'make tools_install' directly.
+	  
+make tools_clean:
+	Clean tools.
+	
+make tools_install:
+	Install tools. Rely on tools.
+	
+make tools_uninstall:
+	Uninstall tools.
+
+make defconfig:
+	Create the default SDK config file(cfg.mak).
+	You can indicate your config file by CFILE parameter:
+	make defconfig CFILE=$(YOUR_CONFIG_FILE)
+
+make menuconfig:
+	Configurate the SDK, the results will be saved to cfg.mak.
+
+make prepare:
+	Prepare for build.
+
+make build:
+	Make prepare, all and install.
+	
+make clean:
+make distclean:
+	Clean all.
+
+make rebuild:
+	Clean all, then build again.
+	
+make all:
+	Will make hiboot, linux, rootfs, common, msp and component.
+	
+make install:
+	Will install hiboot, linux, rootfs, common, msp, component, rootbox,
+	then create filesystem image, make sample lastly.
+
+make uninstall:
+	Will uninstall hiboot, linux, rootfs, common, msp and component.
+
+make XXX:
+	The XXX can be hiboot, linux, rootfs, common, msp, component or sample, 
+	make them respectively.
+
+make XXX_clean:
+	The XXX can be hiboot, linux, rootfs, common, msp, component or sample, 
+	clean them respectively.
+	
+make XXX_install:
+	The XXX can be hiboot, linux, rootfs, common, msp or component, 
+	install them respectively.
+
+make XXX_uninstall:
+	The XXX can be hiboot, linux, rootfs, common, msp or component,
+	uninstall them respectively.
+
+make rootbox_install:
+	Install rootbox.
+	
+make fs:
+	Create filesystem images.
+
+Sub modules of msp, component and sample can be make respectively, their commond:
+	make XXX M=MODULE_NAME
+	make XXX_clean M=MODULE_NAME
+	make XXX_install M=MODULE_NAME
+	make XXX_uninstall M=MODULE_NAME
+Examples:
+	make msp M=i2c
+	make sample M=esplay
+	
+You can compile in every directory which includes a Makefile, for example, you can use
+	make sample M=esplay
+in ${SDK_DIR}, or use
+	make esplay
+in ${SDK_DIR}/sample, or use
+	make
+in ${SDK_DIR}/sample/esplay.

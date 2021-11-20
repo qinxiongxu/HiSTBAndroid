@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+       <!-- 菜单选项 -->
+       <string-array name="Test_Invoke_1">
+               <item>Fast Play</item>
+               <item>Get Audio Track Number</item>
+               <item>Stop Fast Play</item>
+               <item>Rewind Play</item>
+               <item>Get Program Number</item>
+               <item>Get Source Stream Type </item>
+               <item>Get Hls Stream Number</item>
+               <item>Get Hls Download Speed</item>
+               <item>Get Current Hls Stream Info</item>
+               <item>Get Hls Segment Info</item>
+               <item>Get Max Bitrate Stream Detail Info</item>
+               <item>Set Hls Stream ID</item>
+
+               <item>2D SBS-->3D</item>
+               <item>3D-->2D SBS</item>
+               <item>2D SBS-->2D</item>
+               <item>2D-->2D SBS</item>
+               <item>2D TAB-->3D</item>
+               <item>3D-->2D TAB</item>
+               <item>2D TAB-->2D</item>
+               <item>2D-->2D TAB</item>
+               <item>Set Subtitle Size</item>
+               <item>Get Subtitle Size</item>
+               <item>Set Subtitle Vertical</item>
+               <item>Get Subtitle Vertical</item>
+               <item>Set Subtitle Alignment</item>
+               <item>Get Subtitle Alignment</item>
+               <item>Set Subtitle Color</item>
+               <item>Get Subtitle Color</item>
+               <item>Set Subtitle Disable</item>
+               <item>Get Subtitle Disable</item>
+               <item>Set Subtitle Style</item>
+               <item>Get Subtitle Style</item>
+               <item>Set Subtitle Line Space</item>
+               <item>Get Subtitle Line Space</item>
+               <item>Set Subtitle character Space</item>
+               <item>Get Subtitle character Space</item>
+               <item>Set Subtitle Font Path</item>
+               <item>Get Subtitle Font Path</item>
+       </string-array>
+
+       <string-array name="Test_Invoke_2">
+               <item>CMD_SET_VIDEO_CVRS</item>
+               <item>CMD_GET_VIDEO_CVRS</item>
+               <item>CMD_SET_AUDIO_VOLUME</item>
+               <item>CMD_GET_AUDIO_VOLUME</item>
+               <item>CMD_GET_FILE_INFO</item>
+               <item>CMD_SET_AUDIO_CHANNEL_MODE</item>
+               <item>CMD_GET_AUDIO_CHANNEL_MODE</item>
+               <item>CMD_SET_AV_SYNC_MODE</item>
+               <item>CMD_GET_AV_SYNC_MODE</item>
+               <item>CMD_SET_VIDEO_FREEZE_MODE</item>
+               <item>CMD_GET_VIDEO_FREEZE_MODE</item>
+               <item>CMD_SET_AUDIO_TRACK_PID</item>
+               <item>CMD_GET_AUDIO_TRACK_PID</item>
+               <item>CMD_SET_SEEK_POS</item>
+               <item>CMD_SET_VIDEO_FRAME_MODE</item>
+               <item>CMD_GET_VIDEO_FRAME_MODE</item>
+               <item>CMD_SET_VIDEO_FPS</item>
+               <item>CMD_SET_AVSYNC_START_REGION</item>
+               <item>CMD_SET_BUFFER_UNDERRUN</item>
+               <item>CMD_SET_3D_SUBTITLE_CUT_METHOD</item>
+               <item>CMD_SET_AUDIO_MUTE_STATUS</item>
+               <item>CMD_GET_AUDIO_MUTE_STATUS</item>
+
+       </string-array>
+
+       <string-array name="Test_Invoke_3">
+               <item>CMD_GET_AUDIO_INFO</item>
+               <item>CMD_GET_VIDEO_INFO</item>
+               <item>CMD_SET_3D_FORMAT</item>
+               <item>CMD_SET_OUTRANGE</item>
+               <item>CMD_SET_SUB_ID</item>
+               <item>CMD_GET_SUB_ID</item>
+               <item>CMD_GET_SUB_INFO</item>
+               <item>CMD_SET_SUB_FONT_ENCODE</item>
+               <item>CMD_GET_SUB_FONT_ENCODE</item>
+               <item>CMD_SET_SUB_TIME_SYNC</item>
+               <item>CMD_GET_SUB_TIME_SYNC</item>
+               <item>CMD_SET_SUB_EXTRA_SUBNAME</item>
+               <item>CMD_SET_SUB_DISABLE</item>
+
+               <item>CMD_GET_SUB_DISABLE</item>
+               <item>CMD_GET_SUB_ISBMP</item>
+               <item>TestCMD_SET_BUFFER_MAX_SIZE</item>
+               <item>TestCMD_GET_BUFFER_MAX_SIZE</item>
+               <item>TestCMD_GET_DOWNLOAD_SPEED</item>
+               <item>TestCMD_GET_BUFFER_STATUS</item>
+               <item>TestCMD_SET_BUFFERSIZE_CONFIG</item>
+               <item>TestCMD_GET_BUFFERSIZE_CONFIG</item>
+               <item>TestCMD_SET_BUFFERTIME_CONFIG</item>
+               <item>TestCMD_GET_BUFFERTIME_CONFIG</item>
+               <item>TestCMD_GET_IP_PORT</item>
+      </string-array>
+</resources>
